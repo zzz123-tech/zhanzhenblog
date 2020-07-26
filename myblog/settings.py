@@ -26,7 +26,7 @@ SECRET_KEY = 'c4#9)++vwteund6dr560*+outkaq-czam78&#(*bpe010#9_7q'
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','zz.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','.zz.com']
 
 
 # Application definition
