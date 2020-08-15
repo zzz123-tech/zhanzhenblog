@@ -10,6 +10,7 @@ def index(request):
     return render(request,'blog/index.html',context={'post_list':post_list})
 def detail(request,pk):
     post = get_object_or_404(Post,pk=pk)
+    post.increase_views()
     md = markdown.Markdown(extensions=[
         'markdown.extensions.extra',
         'markdown.extensions.codehilite',
